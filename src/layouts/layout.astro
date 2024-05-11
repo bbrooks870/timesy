@@ -25,19 +25,19 @@ const description =
   <meta content={title} name="title" />
   <meta content={description} name="description" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3NTSYKNGX"></script>
-  <script>
-  import { onMount } from 'astro';
+  <script is:inline>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    function g() {
+      w[l].push(arguments);
+    }
+    g('js', new Date());
 
-  onMount(() => {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-S3NTSYKNGX');
-  });
+    s = d.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + i;
+    d.getElementsByTagName('head')[0].appendChild(s);
+  })(window, document, 'script', 'dataLayer', 'G-S3NTSYKNGX'); // Replace 'G-S3NTSYKNGX' with your ID
 </script>
-
     <meta content={title} property="og:title" />
     <meta content={description} property="og:description" />
     <meta content="Timesy" property="og:site_name" />
