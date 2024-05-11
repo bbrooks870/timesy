@@ -7,11 +7,11 @@ export function Footer() {
     <Container>
       <footer className={styles.footer}>
         <p className={styles.line}>
-          Source code on <a href="https://github.com/remvze/timesy">GitHub</a>
+          Made With Love ❤️ 
         </p>
 
         <p className={styles.line}>
-          Created by <a href="https://twitter.com/remvze">Maze ✦</a>
+          Created by Me For Students
         </p>
       </footer>
     </Container>
