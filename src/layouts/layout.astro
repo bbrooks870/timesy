@@ -27,12 +27,16 @@ const description =
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3NTSYKNGX"></script>
   <script>
+  import { onMount } from 'astro';
+
+  onMount(() => {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-S3NTSYKNGX');
-  </script>
+  });
+</script>
 
     <meta content={title} property="og:title" />
     <meta content={description} property="og:description" />
