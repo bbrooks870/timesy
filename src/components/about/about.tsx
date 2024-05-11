@@ -9,15 +9,15 @@ export function About() {
         <h2 className={styles.title}>What is Timely.rest?</h2>
         <p className={styles.desc}>
           Timely.rest is your free, open-source online timer to boost productivity. Run multiple timers, store sessions locally, and stay focused effortlessly. Perfect for students, professionals, and anyone aiming for peak performance.
-        </p>
+        </p><br />
       </Container>
        <Container>
         <h2 className={styles.title}>Features</h2>
         <p className={styles.desc}>
           ⌛ Unlimited number of timers<br />
           ⚡ Run multiple timers simultaneously<br />
-           Name timers for better management<br />
-           Minimal and distraction-free<br />
+          📝 Name timers for better management<br />
+          🛸 Minimal and distraction-free<br />
           ⭐ Privacy friendly; no data collection
         </p>
       </Container>
