@@ -21,9 +21,18 @@ const description =
     <meta content="#18181b" name="theme-color" />
     <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
 
-    <title>{title}</title>
-    <meta content={title} name="title" />
-    <meta content={description} name="description" />
+     <title>{title}</title>
+  <meta content={title} name="title" />
+  <meta content={description} name="description" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3NTSYKNGX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S3NTSYKNGX');
+  </script>
 
     <meta content={title} property="og:title" />
     <meta content={description} property="og:description" />
